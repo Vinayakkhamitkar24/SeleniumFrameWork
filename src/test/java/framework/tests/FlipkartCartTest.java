@@ -29,7 +29,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class FlipkartCartTest {
+import framework.TestComponents.BaseTest;
+
+public class FlipkartCartTest extends BaseTest{
 	public static void main(String[] args) throws InterruptedException {
 
 		int count=3;
@@ -60,6 +62,8 @@ public class FlipkartCartTest {
 		String productTitle = randomProduct.getText();
 
 		System.out.println(productTitle);
+		
+		
 
 		//String productTitle = randomProduct.findElement(By.xpath("/a[2]")).getText();
 		randomProduct.click();
